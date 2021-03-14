@@ -48,7 +48,7 @@
  <joint name="base_to_palm" type="fixed">
     <parent link="tool0"/>
     <child link="ee_palm"/>
-    <origin xyz="0 0 0.09" rpy="0 0 0"/>
+    <origin xyz="0 0 0.135" rpy="0 0 0"/>
  </joint>
 
 </robot>
