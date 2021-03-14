@@ -18,7 +18,8 @@ cd ~/moveit2_ws
 curl --output moveit2.repos \
   https://raw.githubusercontent.com/ros-planning/moveit2/main/moveit2.repos
 
-vcs import src < moveit2.repos && cd src/moveit2/ && git checkout 2499a72f7388a371905eaef72685fcfaae04335a && cd ~/moveit2_ws
+vcs import src < moveit2.repos 
+cd src/moveit2/ && git checkout 2499a72f7388a371905eaef72685fcfaae04335a && cd ~/moveit2_ws
 source /opt/ros/foxy/setup.bash
 rosdep install --from-paths src --ignore-src -yr --rosdistro "${ROS_DISTRO}"
 colcon build
